@@ -16,7 +16,7 @@ copy table(data)
 from 'table.json' 
 csv quote e'\x01' delimiter e'\x02';
 
-But sometimes it would break on certain escape characters.
+But sometimes it would break on certain escape characters. You also get breaks when querying data containing null bytes \u0000
 
 I also tried pgfutter but it never actually loaded the data. pgloader doesn't seem to support json. 
 
