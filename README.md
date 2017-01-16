@@ -20,5 +20,7 @@ But sometimes it would break on certain escape characters. You also get breaks w
 
 I also tried pgfutter but it never actually loaded the data. pgloader doesn't seem to support json. 
 
+# This avoids the following errors
+psycopg2.DataError: unsupported Unicode escape sequence DETAIL: \u0000 cannot be converted to text. CONTEXT: JSON data pqsl
 
 
