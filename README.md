@@ -2,7 +2,7 @@
 Load a line by line json/javascript object file into postgres using python3 with psycopg2. 
 
 # Usage
-python3 python_load_json_postgresql.py ~/myjson.json mytable 
+python3 python_load_json_postgresql.py ~/myjson.json mytable  mydb myuser myhostname
 
 # Warning
 I pass each line to node first in case it's a javascript object being turned into json. Edit this if you don't want this.
